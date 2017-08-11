@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		//function testEvent(){
+			//alert("响应")
+		//}
+		function testEvent(){
+			var testEvent=document.getElementById("event").value;
+			var phone =document.getElementById("phone").value;
+			var firstStr=testEvent.substring(0,1);
+			
+			if(!((firstStr>'a'&&firstStr<'z')||(firstStr>'A'&&firstStr<'Z'))){
+				alert("首字符必须为字母")
+				return false;
+			}
+			if(phone.length !=1){
+				alert("电话号码非法");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	邮箱<input type="text" id="event" value="nameInput">
+	电话<input type="text" id="phone">
+	<input type="button" value="响应" onclick="testEvent()">
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form action="msg.html" method="post">
+	<input type="hidden" name="method" value="add">
+	<table border="1">
+		<tr>
+			<td>姓名：
+			</td>
+			<td>
+				<input type="text" name="userName" name="userName">
+			</td>
+			<td>性别：
+			</td>
+			<td>
+				<input type="radio" name="sex">男
+				<input type="radio" name="sex">女
+				<input type="radio" name="sex">未知
+			</td>
+		</tr>
+		<tr>
+			<td>密码:
+			</td>
+			<td><input type="password" id="password" name="passWord">
+				
+			</td>
+			<td>年龄:
+			</td>
+			<td>
+				<input type="text" id="age" name="age">
+			</td>
+		</tr>
+		<tr>
+			<td>出生日期：
+			</td>
+			<td>
+				<select name="birthDate">
+					<option value="1994">1994 </option>
+					<option value="1995">1995</option>
+					<option value="1996">1996</option>
+				</select>
+			</td>
+			<td>身份证号：
+			</td>
+			<td><input type="text" id="Id" name="Id">
+			</td>
+		</tr>
+		<tr>
+			<td>照片：
+			</td>
+			<td><input type="file" name="file">
+			</td>
+				<td>电话号码:
+			</td>
+				<td><input type="text" name="mobile" name="mobile">
+			</td>
+		</tr>
+		<tr>
+			<td>家庭住址:
+			</td>
+			<td><input type="text" id="address" name="address">
+			</td>
+			<td>兴趣爱好：
+			</td>
+			<td><input type="checkbox" name="favor">篮球
+				<input type="checkbox" name="favor">游戏
+				<input type="checkbox" name="favor">吹拉弹唱
+				<input type="checkbox" name="favor">说学逗唱
+				<input type="checkbox" name="favor">琴棋书画
+			</td>
+		</tr>
+		<tr>
+			<td>个人介绍：
+			</td>
+			<td colspan="3">
+				<textarea style="width: 400px;height: 200px;" name="person"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<!--<a href="add.html"><input type"submit" value="提交"></a>-->
+				<input type="submit" value="提交">
+			</td>
+		</tr>
+
+	</table>
+</form>
+</body>
+</html>
